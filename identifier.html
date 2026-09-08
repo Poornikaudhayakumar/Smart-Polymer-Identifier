@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polymer Identifier - Smart Polymer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🧪 Smart Polymer</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="identifier.html">Polymer Identifier</a>
+            <a href="information.html">Polymer Information</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+
+    <div class="identifier-card">
+
+        <h2>Identify a Polymer</h2>
+
+        <p class="project-subtitle">
+    Property-Based Polymer Classification
+</p>
+
+<p>
+    Select the basic characteristics below to identify
+    the corresponding polymer.
+</p>
+
+
+        <h3>1. Source</h3>
+
+        <select id="source">
+            <option value="">Select Source</option>
+            <option value="synthetic">Synthetic</option>
+            <option value="natural">Natural</option>
+        </select>
+
+
+        <h3>2. Polymer Type</h3>
+
+        <select id="type">
+            <option value="">Select Type</option>
+            <option value="thermoplastic">Thermoplastic</option>
+            <option value="thermosetting">Thermosetting</option>
+        </select>
+
+
+        <h3>3.Polymerization Type</h3>
+
+        <select id="polymerization">
+            <option value="">Select Type</option>
+            <option value="addition">Addition</option>
+            <option value="condensation">Condensation</option>
+        </select>
+
+
+        <br><br>
+
+
+        <button onclick="identifyPolymer()">
+            Identify Polymer
+        </button>
+
+        <button onclick="resetForm()" class="reset-button">
+            Reset
+        </button>
+
+
+        <div id="result"></div>
+
+    </div>
+
+
+    <footer class="footer">
+        <p>Smart Polymer Identification System</p>
+        <p>Engineering Chemistry Project | HTML, CSS & JavaScript</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
